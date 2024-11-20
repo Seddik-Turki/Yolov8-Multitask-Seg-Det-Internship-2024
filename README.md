@@ -13,14 +13,14 @@ The model is trained and evaluated to ensure high accuracy and reliability.
 
 </br>
 
-## ✨ Key Features
+## Key Features
   * **Multitask Learning**: Integrated detection and segmentation tasks in a single model.
   * **Environment-Specific**: Designed specifically for railway scenarios.
   * **YOLOv8 Framework**: For real-time performance.
 
 </br>
 
-## 📂 Project Structure Overview
+## Project Structure Overview
 The Yolov8 model was finetuned on the [RailSem19](https://www.wilddash.cc/railsem19) dataset. All the code of the project can be found in the `Notebooks`.The model weights can be found on this [link](https://drive.google.com/drive/folders/10WByknRYAVb6IEjjyxw3LcoL3jUG9yUc?usp=sharing).
 </br> Here's an overview of the project
 
@@ -41,6 +41,7 @@ The Yolov8 model was finetuned on the [RailSem19](https://www.wilddash.cc/railse
 
 
 ### **2. Training Process**  
+The Training process can be found in the `Training.ipynb` Notebook.
 **Model Architecture**:  
   - Based on YOLOv8, chosen for its high real-time performance and precision.  
   - Includes a shared pre-trained **backbone** for both detection and segmentation tasks, adapted from a multitask model for autonomous vehicles.  
@@ -95,7 +96,7 @@ Detailed calculations can be found in the `Metrics.ipynb` Notebook.
 ### **Detection Metrics**
 | Metric      | Value   |
 |-------------|---------|
-| Precision   | 0.0111  |
+| Precision   | 0.111  |
 | Recall      | 0.584   |
 | mAP50       | 0.208   |
 | mAP50-95    | 0.101   |
