@@ -6,6 +6,8 @@ The model leverages the `YOLOv8` architecture, combining object detection and se
 This project addresses unique challenges in the rail sector by adapting solutions from autonomous vehicles.</br>
 The model is trained and evaluated to ensure high accuracy and reliability.
 
+</br>
+
 ## Visuals
 ![results](images/results.png)
 
@@ -14,8 +16,12 @@ The model is trained and evaluated to ensure high accuracy and reliability.
   * **Environment-Specific**: Designed specifically for railway scenarios.
   * **YOLOv8 Framework**: Forr real-time performance.
 
+</br>
+
 ## 📂 Project Structure Overview
 The Yolov8 model was finetuned on the [RailSem19](https://www.wilddash.cc/railsem19) dataset. All the code of the project can be found in the `Notebooks`. Here's an overview of the project
+
+</br>
 
 #### **1. Exploratory Data Analysis (EDA)**  
 - **Dataset Familiarization**: understand its structure and annotations for both object detection and semantic segmentation.  
@@ -29,6 +35,9 @@ The Yolov8 model was finetuned on the [RailSem19](https://www.wilddash.cc/railse
     - **Track**: Railway tracks for monitoring and maintenance.  
     - **Rail**: Metal components of the tracks.  
     - **Pole**: Structures supporting electrical systems (e.g., catenaries).  
+
+</br>
+
 
 #### **2. Training Process**  
 - **Model Architecture**:  
@@ -46,12 +55,20 @@ This is the model architecture:</br>
     - **Pole class** was trained from scratch due to lack of transferability.  
     - **Detection Head** was trained from scratch also.
 
+</br>
 
 
 #### **3. Prediction**  
 - Performed predictions on:  
-  - **In-dataset images**: From RailSem19 dataset.  
-  - **Out-of-domain videos**: Real-world railway scenarios to evaluate generalization.  
+  - **In-dataset images**: From RailSem19 dataset.
+    ![results](images/predict.png)
+
+  - **Out-of-domain videos**: Real-world railway scenarios to evaluate generalization.
+  ![results](images/output.gif)
+
+   
+</br>
+
 
 #### **4. Evaluation and Metrics**  
 
