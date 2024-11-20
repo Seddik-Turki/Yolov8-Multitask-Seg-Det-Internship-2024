@@ -8,3 +8,8 @@ The model is trained and evaluated to ensure high accuracy and reliability.
 
 ## Visuals
 ![results](images/results.png)
+
+## ✨ Key Features
+**Multitask Learning**: Integrated detection and segmentation tasks in a single model.
+**Environment-Specific**: Designed specifically for railway scenarios.
+**YOLOv8 Framework**: Forr real-time performance.
